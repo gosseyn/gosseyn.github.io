@@ -538,15 +538,16 @@ h4 {
     }
     
     /* BLOG STYLES */
-    .blog-cols {
+   /* .blog-cols {
 	flex-direction : column-reverse;
-    }
+    }*/
+    
      .post-aside {
 	display: none;
      }
- /*    .blog-recent {
+     .blog-recent {
 	 display: none;
-     } */
+}
      .blog-previews {
 	 padding: 0;
      }
