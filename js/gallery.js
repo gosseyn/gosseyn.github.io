@@ -11,12 +11,18 @@ function activateGallery() {
     let galleryInfo = document.querySelector("#gallery-info");
     let title = document.querySelector(".title");
     let description = document.querySelector(".description");
-
+    
+    
     
     thumbnails.forEach(function(thumbnail) {
+	//Précharge les grandes images
+	let newImageSrc = thumbnail.dataset.largeVersion;
+	let largeVersion = new Image();
+	largeVersion.src = newImageSrc;
+	
         thumbnail.addEventListener("click", function(){
 	    // déclare l'image clickée  image principale
-	    let newImageSrc = thumbnail.dataset.largeVersion;
+	    
 	    mainImage.setAttribute("src", newImageSrc);
 	    mainImage.setAttribute("alt", thumbnail.dataset.title)
 
