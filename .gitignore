@@ -2,3 +2,5 @@ _site
 
 # ignorer les fichiers de sauvegarde emacs ou vim
 *~
+# le cache de Jekyll
+#.jekyll-cache/
